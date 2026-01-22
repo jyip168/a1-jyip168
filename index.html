@@ -15,7 +15,7 @@
   
   // Add Rectangles
   var rectangle = svg.append("rect")
-  .attr("x", 200)
+  .attr("x", 800)
   .attr("y", 200)
   .attr("width", 150)
   .attr("height", 50)
@@ -24,7 +24,7 @@
   // Add Circles
   var circle = svg.append("circle")
   .attr("cx", 400)
-  .attr("cy", 400)
+  .attr("cy", 800)
   .attr("r", 75)
   .style("fill", "yellow")
   
@@ -70,9 +70,9 @@
 
   //Added Path
   var path = d3.path();
-  path.moveTo(500, 200);
-  path.moveTo(500, 300);
-  path.moveTo(600, 300);
+  path.moveTo(500, 400);
+  path.moveTo(500, 500);
+  path.moveTo(600, 500);
   path.quadraticCurveTo(100, 200, 300, 400);
   path.closePath();
 
