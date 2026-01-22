@@ -85,3 +85,24 @@ Remember, it is up to *you* to define what constitutes a technical and design ac
 Be ambitious as these are designed to allow you to shape your learning.
 These are the only way to move from B to A territory.
 
+
+
+
+Description
+---
+
+A description of what you have created. 1-2 screenshots are recommended for the README.
+A working link to the hosted files (usually the gh-pages 'live' url)
+
+()
+
+(Screenshots)
+
+Link:
+- https://jyip168.github.io/a1-jyip168/
+
+Technical Achievements
+- 
+
+Design Achievements
+- 

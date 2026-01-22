@@ -14,7 +14,7 @@
   .attr("height", height);
   
   // Add Rectangles
-  svg.append("rect")
+  var rectangle = svg.append("rect")
   .attr("x", 200)
   .attr("y", 200)
   .attr("width", 150)
@@ -22,28 +22,28 @@
   .style("fill", "green")
   
   // Add Circles
-  svg.append("circle")
+  var circle = svg.append("circle")
   .attr("cx", 400)
   .attr("cy", 400)
   .attr("r", 75)
   .style("fill", "yellow")
   
   // Add Lines
-  svg.append("line")
+  var line1 = svg.append("line")
   .attr("x1", 600)
   .attr("x2", 650)
   .attr("y1", 600)
   .attr("y2", 550)
   .attr("stroke", "blue")
 
-  svg.append("line")
+  var line2 = svg.append("line")
   .attr("x1", 650)
   .attr("x2", 720)
   .attr("y1", 550)
   .attr("y2", 680)
   .attr("stroke", "blue")
 
-  svg.append("line")
+  var line3 = svg.append("line")
   .attr("x1", 720)
   .attr("x2", 780)
   .attr("y1", 680)
@@ -51,9 +51,18 @@
   .attr("stroke", "blue")
   
   // Add Polygons
-  svg.append("polygon")
+  var polygon = svg.append("polygon")
   .attr("points", "800,800 845,845 950,845 950,875")
   .style("fill", "red")
   .style("stroke", "black")
+
+  animate();
+
+  function animate() {
+    circle.transition()
+    .ease(d3.easeLinear)
+    .duration(3000)
+    .attr("height", 200)
+  }
 
 </script>
