@@ -56,13 +56,38 @@
   .style("fill", "red")
   .style("stroke", "black")
 
+  //Add Arc
+  var arc = svg.append("path")
+  .attr("transform", "translate(300,100)")
+  .attr("d", d3.arc()
+    .innerRadius(125)
+    .outerRadius(200)
+    .startAngle(3.14)
+    .endAngle(9)
+    )
+  .attr("stroke", "black")
+  .attr("fill", "pink")
+
+  //Added Path
+  var path = d3.path();
+  path.moveTo(500, 200);
+  path.moveTo(500, 300);
+  path.moveTo(600, 300);
+  path.quadraticCurveTo(100, 200, 300, 400);
+  path.closePath();
+
+  svg.append("path")
+  .attr("d", path.toString())
+  .attr("stroke", "purple")
+
+
   animate();
 
   function animate() {
     circle.transition()
     .ease(d3.easeLinear)
     .duration(3000)
-    .attr("r", 300)
+    .attr("r", 150)
     rectangle.transition()
     .ease(d3.easeLinear)
     .duration(3000)

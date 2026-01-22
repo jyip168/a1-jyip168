@@ -102,7 +102,8 @@ Link:
 - https://jyip168.github.io/a1-jyip168/
 
 Technical Achievements
-- 
+- Added an animation on page load for changing the size of the rectangle and the circle.
 
 Design Achievements
-- 
+- Added another shape using the d3 path feature.
+- Added another shape using the d3 arc feature.
