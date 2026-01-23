@@ -91,18 +91,16 @@ These are the only way to move from B to A territory.
 Description
 ---
 
-A description of what you have created. 1-2 screenshots are recommended for the README.
-A working link to the hosted files (usually the gh-pages 'live' url)
+For this assignment, I have created a simple HTML webpage that displays primitive shapes through d3. d3 was also used to perform simple animations on the page as well. The page was then deployed to Github Pages.
 
-()
-
-(Screenshots)
+![image](/a1-page.png)
 
 Link:
 - https://jyip168.github.io/a1-jyip168/
 
 Technical Achievements
-- 
+- Added an animation on page load for changing the size of the rectangle and the circle.
 
 Design Achievements
-- 
+- Added another shape using the d3 path feature.
+- Added another shape using the d3 arc feature.
